@@ -1,4 +1,4 @@
-function showHomePage() {
+function showAboutus() {
   document.getElementById("About us").style.display = "block";
 }
 
@@ -21,7 +21,10 @@ function showGuidespage() {
   document.getElementById("Destinations We've Explored").style.display = "none";
   document.getElementById("Guides").style.display = "block";
 }
-showHomePage();
+showAboutus();
+
+var AboutusLink = document.querySelectorAll("#top-menu-bar a")[0];
+AboutusLink.addEventListener("click", showAboutus);
 
 var DestinationsWeveExploredLink =
   document.querySelectorAll("#top-menu-bar a")[1];
