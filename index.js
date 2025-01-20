@@ -1,8 +1,11 @@
 function showAboutus() {
   document.getElementById("Aboutus").style.display = "block";
+  document.getElementById("Packing Tips").style.display = "none";
+  document.getElementById("Guides").style.display = "none";
+  document.getElementById("Destinations We've Explored").style.display = "none";
 }
 
-function showDestinationsWeveExploredpage() {
+function showDestinationspage() {
   document.getElementById("Aboutus").style.display = "none";
   document.getElementById("Packing Tips").style.display = "none";
   document.getElementById("Guides").style.display = "none";
@@ -26,12 +29,8 @@ showAboutus();
 var AboutusLink = document.querySelectorAll("#top-menu-bar a")[0];
 AboutusLink.addEventListener("click", showAboutus);
 
-var DestinationsWeveExploredLink =
-  document.querySelectorAll("#top-menu-bar a")[1];
-DestinationsWeveExploredLink.addEventListener(
-  "click",
-  showDestinationsWeveExploredpage
-);
+var DestinationsLink = document.querySelectorAll("#top-menu-bar a")[1];
+DestinationsLink.addEventListener("click", showDestinationspage);
 
 var PackingTipsLink = document.querySelectorAll("#top-menu-bar a")[2];
 PackingTipsLink.addEventListener("click", showPackingTipspage);
