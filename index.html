@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tips & Tricks for Memorable Adventures</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="header-wrapper">
+        <div id="my-picture">
+          <img src="images/US.JPG" alt="US" width="110" />
+        </div>
+        <div id="header-info">
+          <h1>Andronesi Family Travels</h1>
+          <h2>Tips & Tricks for Memorable Adventures</h2>
+        </div>
+      </div>
+
+      <ul id="top-menu-bar">
+        <li><a href="#" class="active">ABOUT US</a></li>
+        <li>
+          <a href="#" onclick="showDestinationsWeveExploredpage()"
+            >DESTINATION We've Explored</a
+          >
+        </li>
+        <li><a href="#" onclick="showPackingTipspage()">PACKING TIPS</a></li>
+        <li><a href="#" onclick="showGuidespage()">Guides</a></li>
+      </ul>
+    </header>
+    <section id="content">
+      <div id="side-menu">
+        <section>
+          <h2>Contact form</h2>
+          <form action="images/US.JPG" method="get">
+            <label for="contact-email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="contact-email"
+              required
+              placeholder="miha@travel.com"
+            />
+            <br />
+            <label for="contact-name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="contact-name"
+              required
+              placeholder="Your name"
+            />
+            <br />
+            <label for="feedback">Feedback</label>
+            <input
+              type="text"
+              name="reason"
+              id="contact-reason"
+              required
+              placeholder="awesome content!"
+            />
+
+            <button type="submit">Contact us</button>
+          </form>
+        </section>
+        <section>
+          <h2>Rubik's Face</h2>
+          <div class="rubik-face">
+            <div style="background: #0082df"></div>
+            <div style="background: #ffff00"></div>
+            <div style="background: #ff2c0a"></div>
+            <div style="background: #0082df"></div>
+            <div style="background: #ffff00"></div>
+            <div style="background: #ff2c0a"></div>
+            <div style="background: #0082df"></div>
+            <div style="background: #ffff00"></div>
+            <div style="background: #ff2c0a"></div>
+          </div>
+        </section>
+      </div>
+      <div id="main">
+        <div class="page" id="About us">
+          <h2>About us</h2>
+          <strong>Welcome to Your Ultimate Travel Tips Hub!</strong> Planning
+          your next adventure? We've got you covered! Here, you'll find
+          practical tips, smart hacks, and insider advice to make your travels
+          more enjoyable and unforgettable
+        </div>
+
+        <div class="page" id="Destinations We've Explored">
+          <h2>Destinations We've Explored</h2>
+          <ul>
+            <li class="favourite">
+              <strong>Italy</strong> - <i>San Gimignano</i>
+            </li>
+            <li><strong>Italy</strong> - <i>Voltera</i></li>
+            <li><strong>Italy</strong> - <i>Montepulciano</i></li>
+            <li><strong>Italy</strong> - <i>Ravello</i></li>
+            <li><strong>Italy</strong> - <i>Pompei</i></li>
+            <li><strong>Italy</strong> - <i>Alberobelo</i></li>
+            <li><strong>Italy</strong> - <i>Lecce</i></li>
+            <li><strong>Italy</strong>- <i>Matera</i></li>
+            <li><strong>Italy</strong> - <i>Malcesine</i></li>
+            <li><strong>Italy</strong> - <i>Maldive di Salento</i></li>
+            <li><strong>Italy</strong> - <i>Gardaland</i></li>
+            <li><strong>Greece</strong> - <i>Lefkada</i></li>
+            <li><strong>Greece</strong> - <i>Zakynthos</i></li>
+            <li><strong>Greece</strong> - <i>Crete</i></li>
+          </ul>
+        </div>
+
+        <div class="page" id="Best of">
+          <h2>Top Destinations We've Explored</h2>
+          <p>Top Destinations We've Explored</p>
+        </div>
+
+        <div class="page" id="Packing Tips">
+          <h2>Packing Tips</h2>
+          <table border="1">
+            <tr>
+              <th>Tip</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td>Roll, Don’t Fold</td>
+              <td>
+                Rolling clothes saves space and minimizes wrinkles compared to
+                folding them.
+              </td>
+            </tr>
+            <tr>
+              <td>Pack Versatile Clothing</td>
+              <td>
+                Choose clothes that can be mixed and matched for multiple
+                outfits, reducing the number of items you need to pack.
+              </td>
+            </tr>
+            <tr>
+              <td>Leave Room for Souvenirs</td>
+              <td>
+                Don’t overpack—leave some space in your luggage for souvenirs or
+                items you might pick up during your trip.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="page" id="Guides">
+        <h2>Guides</h2>
+        <a href="https://ro.wikipedia.org/wiki/Matera">Matera</a>
+        <br />
+        <a
+          href="https://www.gardaland.it/en/explore-gardaland/legoland-water-park/"
+          >Gardaland</a
+        >
+        <br />
+        <a href="https://www.italia.it/en/tuscany">Tuscany</a>
+      </div>
+    </section>
+    <footer>
+      <h2>Terms and conditions</h2>
+      <form action="" method="post">
+        <label for="terms and conditions"
+          >I have read the terms and conditions</label
+        >
+        <input
+          type="checkbox"
+          name="I have read the terms and conditions"
+          id="contact-email"
+          required
+          placeholder="miha@travel.com"
+        />
+      </form>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
