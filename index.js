@@ -1,30 +1,34 @@
 function hide(id) {
   document.getElementById(id).style.display = "none";
 }
+function show(id) {
+  document.getElementById(id).style.display = "block";
+}
+
 function showAboutus() {
   hide("Packing Tips");
   hide("Guides");
   hide("Destinations");
-  document.getElementById("Aboutus").style.display = "block";
+  show("Aboutus");
 }
 
 function showDestinationspage() {
   hide("Aboutus");
   hide("Packing Tips");
   hide("Guides");
-  document.getElementById("Destinations").style.display = "block";
+  show("Destinations");
 }
 function showPackingTipspage() {
   hide("Aboutus");
   hide("Destinations");
   hide("Guides");
-  document.getElementById("Packing Tips").style.display = "block";
+  show("Packing Tips");
 }
 function showGuidespage() {
   hide("Aboutus");
   hide("Packing Tips");
   hide("Destinations");
-  document.getElementById("Guides").style.display = "block";
+  show("Guides");
 }
 showAboutus();
 
