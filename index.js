@@ -1,27 +1,29 @@
+function hide(id) {
+  document.getElementById(id).style.display = "none";
+}
 function showAboutus() {
+  hide("Packing Tips");
+  hide("Guides");
+  hide("Destinations");
   document.getElementById("Aboutus").style.display = "block";
-  document.getElementById("Packing Tips").style.display = "none";
-  document.getElementById("Guides").style.display = "none";
-  document.getElementById("Destinations We've Explored").style.display = "none";
 }
 
 function showDestinationspage() {
-  document.getElementById("Aboutus").style.display = "none";
-  document.getElementById("Packing Tips").style.display = "none";
-  document.getElementById("Guides").style.display = "none";
-  document.getElementById("Destinations We've Explored").style.display =
-    "block";
+  hide("Aboutus");
+  hide("Packing Tips");
+  hide("Guides");
+  document.getElementById("Destinations").style.display = "block";
 }
 function showPackingTipspage() {
-  document.getElementById("Aboutus").style.display = "none";
-  document.getElementById("Destinations We've Explored").style.display = "none";
-  document.getElementById("Guides").style.display = "none";
+  hide("Aboutus");
+  hide("Destinations");
+  hide("Guides");
   document.getElementById("Packing Tips").style.display = "block";
 }
 function showGuidespage() {
-  document.getElementById("Aboutus").style.display = "none";
-  document.getElementById("Packing Tips").style.display = "none";
-  document.getElementById("Destinations We've Explored").style.display = "none";
+  hide("Aboutus");
+  hide("Packing Tips");
+  hide("Destinations");
   document.getElementById("Guides").style.display = "block";
 }
 showAboutus();
